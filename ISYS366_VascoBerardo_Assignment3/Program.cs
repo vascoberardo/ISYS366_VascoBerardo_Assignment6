@@ -100,7 +100,8 @@ app.UseRouting();
 app.UseAuthorization();
 
 app.MapStaticAssets();
-app.MapRazorPages();
+app.MapRazorPages()
+    .WithStaticAssets();
 
 using (var scope = app.Services.CreateScope())
 {
