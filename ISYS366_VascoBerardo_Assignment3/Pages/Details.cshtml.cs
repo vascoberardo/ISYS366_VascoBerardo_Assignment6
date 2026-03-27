@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using ISYS366_VascoBerardo_Assignment3.Data;
 using ISYS366_VascoBerardo_Assignment3.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ISYS366_VascoBerardo_Assignment3.Pages
 {
+    [Authorize]
     public class DetailsModel : PageModel
     {
         private readonly ISYS366_VascoBerardo_Assignment3.Data.ISYS366_VascoBerardo_Assignment3Context _context;

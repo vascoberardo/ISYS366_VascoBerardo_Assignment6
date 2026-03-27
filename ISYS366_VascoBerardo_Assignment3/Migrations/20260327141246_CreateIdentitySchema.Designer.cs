@@ -4,6 +4,7 @@ using ISYS366_VascoBerardo_Assignment3.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ISYS366_VascoBerardo_Assignment3.Migrations
 {
     [DbContext(typeof(ISYS366_VascoBerardo_Assignment3Context))]
-    partial class ISYS366_VascoBerardo_Assignment3ContextModelSnapshot : ModelSnapshot
+    [Migration("20260327141246_CreateIdentitySchema")]
+    partial class CreateIdentitySchema
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
